@@ -15,6 +15,14 @@
 - 已安装包：moviepy, edge-tts, dashscope等
 - 操作系统：Windows 10 + PowerShell 5.1
 
+### 文档生成工具
+- **md2docx.js**：`C:\Users\Lenovo\.workbuddy\skills\Word 文档生成\scripts\md2docx.js`（也在 `book\md2docx.js` 保留一份）
+- 通用 Markdown 转 Word 工具，基于 docx-js
+- 用法：`cd <workspace> && NODE_OPTIONS="" node <skill_dir>/scripts/md2docx.js <input.md> [output.docx]`
+- 支持：标题H1-H4、粗体、无序/有序列表、表格、引用块、图表占位、版本记录自动跳过
+- 输出格式：A4 / 宋体正文10.5pt / 黑体标题 / 页眉"企业架构 第二版" / 页码页脚
+- **以后生成Word不要写新脚本，直接调用这个工具**
+
 ### 可用服务
 - 飞书多维表格技能：feishu-bitable (ID: 87187092)
 - Edge TTS：完全免费，无需API Key
@@ -40,9 +48,15 @@
 - **原版章节目录**：`book\markdown_chapters_done\`（11个章节+附录，v1.0）
 - **重写输出目录**：`book\markdown_chapters_v4\`
 
-### 当前进度：第三章V5.1方案已确认（2026-05-15）
+### 当前进度：第四章V5.4已更新（2026-05-23）
 
-**状态**：第三章重写方案V5.1已确认，等待正文写作
+**状态**：第四章第四节架构治理已重写，重心从IT架构治理转向企业架构治理
+
+**第四章V5.4变更要点**：
+- 架构治理核心决策对象：业务能力、业务流程、组织与能力对齐、业务变更管控
+- IT架构对齐作为辅助延伸环节
+- 治理组织：从"IT委员会"改为"架构治理委员会"
+- 五种决策权责模式调整为以业务驱动为主
 
 **第三章方案要点**：
 - **核心定位**：IT是业务需求实现的工具，不是目的
